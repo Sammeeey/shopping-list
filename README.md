@@ -3,10 +3,11 @@
 
 
 ## ToDo
-- [x] clear input fields after submit
+- [ ] clear input fields after submit
+  - [ ] [reset form values only when form submitted successfully (without errors)](https://youtu.be/ERHAo_z-9EE?t=66)
 - [ ] unique IDs
-- [ ] (form validation (seperate component (using *react hook form*)))
-  - [ ] prevent possibility of adding empty products 
+- [x] (form validation (seperate component (using *react hook form*)))
+  - [x] prevent possibility of adding empty products
 - [x] deploy on vercel
 - [ ] (deploy on firebase)
 - [ ] maintain user input throughout sessions
