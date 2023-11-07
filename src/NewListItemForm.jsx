@@ -1,11 +1,9 @@
 // import './NewListItemForm.css'
 
-import { useState } from "react"
 import { useForm } from "react-hook-form"
 
 function NewListItemForm({setShoppingList}) {
-    const initialItem = {name: "", quantity: ""}
-    const [listItem, setListItem] = useState({...initialItem})
+
     const {
         register,
         handleSubmit,
