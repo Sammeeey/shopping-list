@@ -3,7 +3,7 @@
 
 
 ## ToDo
-- [ ] clear input fields after submit
+- [x] clear input fields after submit
   - [ ] [reset form values only when form submitted successfully (without errors)](https://youtu.be/ERHAo_z-9EE?t=66)
 - [ ] unique IDs
 - [x] (form validation (seperate component (using *react hook form*)))
@@ -11,6 +11,9 @@
 - [x] deploy on vercel
 - [ ] (deploy on firebase)
 - [ ] maintain user input throughout sessions
+  - [x] save list to localstorage
+  - [ ] get initial list from localstorage
+  - [ ] (save list to db)
 - [ ] (authentication)
 
 

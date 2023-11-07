@@ -12,7 +12,7 @@ function ShoppingList() {
         <ul>
         {shoppingList.map((item, i) => <li key={i}>{item.quantity}x {item.name}</li>)}
         </ul>
-        <NewListItemForm {...{setShoppingList}} />
+        <NewListItemForm {...{shoppingList, setShoppingList}} />
         </>
     )
 }

@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form"
 
-function NewListItemForm({setShoppingList}) {
+function NewListItemForm({shoppingList, setShoppingList}) {
 
     const {
         register,
@@ -18,11 +18,14 @@ function NewListItemForm({setShoppingList}) {
     })
 
     const onSubmit = (data) => {
-        setShoppingList(prevShoppingList => 
-            [...prevShoppingList, data]
-        );
-        reset()
+        const updatedShoppinglist = [...shoppingList, data]
+        setShoppingList(updatedShoppinglist);
+        
+        reset();
+        
+        localStorage.setItem('shoppingList', JSON.stringify(updatedShoppinglist))
     }
+    
     console.log(watch(["name", "quantity"]))
 
     return (
