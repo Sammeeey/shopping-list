@@ -11,12 +11,14 @@ function NewListItemForm({setShoppingList}) {
         handleSubmit,
         watch,
         formState: {errors},
+        reset,
     } = useForm()
 
     const onSubmit = (data) => {
         setShoppingList(prevShoppingList => 
             [...prevShoppingList, data]
         );
+        reset()
     }
     console.log(watch(["name", "quantity"]))
 
