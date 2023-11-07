@@ -32,8 +32,9 @@ function NewListItemForm({setShoppingList}) {
             {errors.name && <span>This field is required</span>}
 
             <label htmlFor="quantity">How many?</label>
-            <input type="number" {...register("quantity", {min: 3})}/>
-            {errors.quantity && <span>Min quantity: 3</span>}
+            <input type="number" {...register("quantity", {min: 3, required: true})}/>
+            {errors.quantity?.type === 'min' && <span>Min quantity: 3</span>}
+            {errors.quantity?.type === 'required' && <span>quantity is required</span>}
 
             <button>Add new item</button>
         </form>
