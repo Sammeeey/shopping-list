@@ -7,7 +7,10 @@
 - [ ] unique IDs
 - [ ] (form validation (seperate component (using *react hook form*)))
   - [ ] prevent possibility of adding empty products 
-- [ ] deploy on vercel &/or firebase
+- [x] deploy on vercel
+- [ ] (deploy on firebase)
+- [ ] maintain user input throughout sessions
+- [ ] (authentication)
 
 
 
