@@ -12,7 +12,7 @@
 - [ ] (deploy on firebase)
 - [ ] maintain user input throughout sessions
   - [x] save list to localstorage
-  - [ ] get initial list from localstorage
+  - [x] get initial list from localstorage
   - [ ] (save list to db)
 - [ ] (authentication)
 

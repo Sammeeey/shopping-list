@@ -3,8 +3,10 @@
 import { useState } from "react";
 import NewListItemForm from "./NewListItemForm";
 
+const getLocalList = () => JSON.parse(localStorage.getItem('shoppingList'))
+
 function ShoppingList() {
-    const [shoppingList, setShoppingList] = useState([])
+    const [shoppingList, setShoppingList] = useState(getLocalList())
 
     return (
         <>
