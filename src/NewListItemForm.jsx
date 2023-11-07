@@ -12,7 +12,12 @@ function NewListItemForm({setShoppingList}) {
         watch,
         formState: {errors},
         reset,
-    } = useForm()
+    } = useForm({
+        defaultValues: {
+            name: '',
+            quantity: '',
+        }
+    })
 
     const onSubmit = (data) => {
         setShoppingList(prevShoppingList => 
