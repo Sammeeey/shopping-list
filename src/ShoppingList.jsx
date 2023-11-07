@@ -6,7 +6,7 @@ import NewListItemForm from "./NewListItemForm";
 const getLocalList = () => JSON.parse(localStorage.getItem('shoppingList'))
 
 function ShoppingList() {
-    const [shoppingList, setShoppingList] = useState(getLocalList())
+    const [shoppingList, setShoppingList] = useState(getLocalList() ? getLocalList() : [])
 
     return (
         <>
